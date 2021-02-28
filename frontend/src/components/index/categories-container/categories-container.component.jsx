@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CategoryTile from '../../product-directory-item/product-directory-item.component';
+import CategoryTile from '../categories-tile/categories-tile.component';
 
 import './categories-container.styles.scss'
 
@@ -38,6 +38,7 @@ class IndexCategories extends React.Component {
                     title: 'pens and markers',
                     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 5,
+                    size: 'large',
                     linkUrl: 'products/pens-markers'
                 },
                 {
@@ -54,8 +55,8 @@ class IndexCategories extends React.Component {
     render() {
         return (
             <div className='product-directory-menu'>
-                {this.state.productCategories.map(({ title, imageUrl, id, size }) => (
-                <CategoryTile key={id} title={title} imageUrl={imageUrl} size={size} />
+                {this.state.productCategories.map(({ id, ...otherSectionProps }) => (
+                <CategoryTile key={id} {...otherSectionProps} />
             ))}
             </div>
         )

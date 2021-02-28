@@ -1,21 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Index from './pages/index/index.component';
-import ProductDirectory from './components/product-directory/product-directory.component';
+import ProductDirectory from './components/product/product-directory/product-directory.component';
 
 
 const App = () => {
   return (
-    <Router>
-      <div>
-
-        <Route path='/' component={Index} exact />
-        <Route path='/browse' component={ProductDirectory} exact />
-
-      </div>
-    </Router>
+    <div>
+      <Switch>
+        <Route exact path='/' component={Index}  />
+        <Route exact path='/products' component={ProductDirectory} />
+      </Switch>
+    </div>
+        
   );
 };
 

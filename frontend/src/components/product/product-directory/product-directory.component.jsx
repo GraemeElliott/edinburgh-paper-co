@@ -14,38 +14,38 @@ class ProductDirectory extends React.Component {
                     title: 'notebooks',
                     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
                     id: 1,
-                    linkUrl: 'browse/notebooks'
+                    linkUrl: 'products/notebooks'
                 },
                 {
                     title: 'diaries and planners',
                     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 2,
-                    linkUrl: 'browse/diaries-planners'
+                    linkUrl: 'products/diaries-planners'
                 },
                 {
                     title: 'pens and markers',
                     imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
                     id: 4,
-                    linkUrl: 'browse/pens-markers'
+                    linkUrl: 'products/pens-markers'
                 },
                 {
                     title: 'pencils and erasers',
                     imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
                     id: 5,
-                    linkUrl: 'browse/pencils-erasers'
+                    linkUrl: 'products/pencils-erasers'
                 },
                 {
                     title: 'washi tape',
                     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 3,
-                    linkUrl: 'browse/washi-tape'
+                    linkUrl: 'products/washi-tape'
                 },
                 {
                     title: 'gifts and accessories',
                     imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
                     size: 'large',
                     id: 6,
-                    linkUrl: 'browse/gifts-accessories'
+                    linkUrl: 'products/gifts-accessories'
                 }
             ]   
         }

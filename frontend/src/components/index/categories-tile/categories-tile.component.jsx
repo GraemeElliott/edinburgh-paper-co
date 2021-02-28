@@ -1,9 +1,12 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-import './product-directory-item.styles.scss';
+import './categories-tile.styles.scss';
 
-const CategoryTile = ({ title, imageUrl, size }) => (
-  <div className={`${size} browse-item`}>
+
+
+const CategoryTile = ({ title, imageUrl, size, history, linkUrl, match }) => (
+  <div className={`${size} category-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
     <div
       className='background-image'
       style={{
@@ -16,4 +19,4 @@ const CategoryTile = ({ title, imageUrl, size }) => (
   </div>
 );
 
-export default CategoryTile;
+export default withRouter(CategoryTile);
